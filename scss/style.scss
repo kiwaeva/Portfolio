@@ -1,5 +1,6 @@
 @import 'config';
 @import 'darkMode';
+
     * {
 	box-sizing: border-box;
 	margin: 0;
@@ -146,7 +147,7 @@
      to {border-color: rgb(155, 57, 73)}
  }
 
- @import 'mobile';
+
 
 //  My projects Section
 
@@ -157,12 +158,12 @@
 }
 
 .card img{
-//     display: flex;
+// display: flex;
 // justify-content: space-around;
     width: 250px;
-//     padding-left: 20px;
 }
-.prcards {
+
+.prcards{
     display: flex;
     justify-content: space-evenly;
 }
@@ -179,3 +180,5 @@
     width: 30px;
     cursor: pointer;
 }
+
+ @import 'mobile';
