@@ -1,0 +1,18 @@
+.dark-theme{
+    background-color: $secondary-color;
+    color: $primary-color;
+}
+
+.dark-theme .card {
+    background-color: $secondary-color;
+    color: $primary-color;
+}
+
+.dark-theme h2.title::after {
+      background-color: $secondary-color;
+      color: $primary-color;
+}
+.dark-theme h2.title::before {
+      background-color: $primary-color;
+}
+

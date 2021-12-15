@@ -1,0 +1,181 @@
+@import 'config';
+@import 'darkMode';
+    * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+    /*NAVIGATION BAR*/
+ .navbar {
+     background-color: $primary-color;
+     font-family: $font-stack;
+     color: $light-color;
+     
+ }
+
+ .navbar-brand {
+     font-family: 'Ubuntu', sans-serif;
+     color: $light-color;
+ }
+
+/*FIRST INTRO SECTION*/
+ .intro {
+     background: url(/img/intro.jpg);
+     background-size: cover;
+     height: 100vh;
+     color: rgb(255, 217, 217);
+
+ }
+
+ .bg {
+     background-image: radial-gradient(rgba(41, 32, 32, 0.62), rgba(5, 3, 4, 0.58)), url(/img/intro.jpg);
+ }
+
+ /*TEXT WITHIN INTRO*/
+ .text123 {
+     font-family: 'Ubuntu', sans-serif;
+     font-weight: 600;
+     text-align: left;
+     padding: 280px 50px;
+ }
+
+ /*SKILLS SECTION*/
+
+ .skills .title::before {
+     background: #c4436e;
+ }
+
+ section .title::before {
+     content: "";
+     position: absolute;
+     bottom: 0px;
+     left: 50%;
+     width: 180px;
+     height: 3px;
+     background: #111;
+     transform: translateX(-50%);
+ }
+
+ .skills .title::after {
+     content: "what I know";
+     background: #fff;
+ }
+
+ section .title::after {
+     content: "what I did";
+ }
+
+ section .title::after {
+     position: absolute;
+     bottom: -17px;
+     left: 50%;
+     font-size: 20px;
+     color: #c4436e;
+     padding: 5px;
+     background: #fff;
+     transform: translateX(-50%);
+ }
+
+ section .title {
+     position: relative;
+     text-align: center;
+     font-size: 40px;
+     font-weight: 700;
+     margin-bottom: 60px;
+     padding-bottom: 20px;
+     font-family: 'Ubuntu', sans-serif;
+ }
+
+ section {
+     padding: 100px 0;
+     display: block;
+ }
+
+ /*Skills Cards*/
+
+ .skills-content {
+     display: flex;
+     justify-content: space-evenly;
+     
+ }
+ .card {
+     border: none;
+     margin: 10px;
+     transition: 0.4s;
+ }
+
+ .card:hover {
+     color: $light-color;
+     background-color: $primary-color;
+ }
+
+ /*Typing effect*/
+ .typed-out {
+     
+     overflow: hidden;
+     border-right: .15em solid  $primary-color;
+     white-space: nowrap;
+     animation:
+         typing 3s steps(20, end) forwards,
+         blink .8s infinite;
+     font-size: 1.6rem;
+     width: 0;
+     
+
+ }
+
+ .container {
+     display: inline-block;
+     margin: 0;
+     padding: 0;
+ }
+
+ @keyframes typing {
+     from {
+         width: 0
+     }
+
+     to {
+         width: 100%
+     }
+ }
+
+ /*Blinking cursor*/
+ @keyframes blink {
+     from { border-color: transparent}
+     to {border-color: rgb(155, 57, 73)}
+ }
+
+ @import 'mobile';
+
+//  My projects Section
+
+.projects{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.card img{
+//     display: flex;
+// justify-content: space-around;
+    width: 250px;
+//     padding-left: 20px;
+}
+.prcards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-primary{
+   margin-left: 8.5%;
+}
+
+
+// day/night mode
+
+#darkMode{
+    margin: 10px;
+    width: 30px;
+    cursor: pointer;
+}
